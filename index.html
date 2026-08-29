@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0b0f16">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="DeskOS">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icons/icon.svg">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <title>DeskOS</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar"><div class="brand"><span class="brand-mark">D</span><span>DeskOS</span></div><div class="header-actions"><button class="icon-button" id="nightToggle" aria-label="Toggle night mode">☾</button><button class="desk-button" id="deskToggle">Desk Mode</button></div></header>
+    <main id="app" tabindex="-1"></main>
+    <button class="desk-exit" id="deskExit" type="button" data-action="exit-desk">Exit Desk Mode</button>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <button data-view="home" class="nav-item active"><span>⌂</span>Home</button><button data-view="school" class="nav-item"><span>▤</span>School</button><button data-view="movies" class="nav-item"><span>◉</span>Movies</button><button data-view="gaming" class="nav-item"><span>⌁</span>Gaming</button><button data-view="settings" class="nav-item"><span>⚙</span>Settings</button>
+    </nav>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden></div>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
